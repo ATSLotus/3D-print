@@ -1,4 +1,6 @@
 .displayinfo {
+  margin: 0px;
+  padding: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -11,7 +13,7 @@
 
 .displayinfo .articalBox {
   position: relative;
-  top: 200px;
+  margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -36,6 +38,7 @@
 .displayinfo .articalBox .articalContent .text {
   font-size: 18px;
   margin-top: 10px;
+  /* display: flex; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -43,7 +46,6 @@
   text-align: center;
   padding-top: 10px;
   border-top: 1px solid;
-  display: block;
 }
 
 .displayinfo .articalBox .articalContent .text .textCon0 {
@@ -55,8 +57,9 @@
 
 .displayinfo .articalBox .articalContent .text .articalDate {
   font-size: 0.875rem;
-  color: #000000;
+  color: #333333;
   line-height: 20px;
+  display: inline-block;
 }
 
 .displayinfo .articalBox .articalContent .text .textCon1 {
@@ -90,12 +93,17 @@
   width: 1200px;
 }
 
+.listcolumn {
+  margin: 0px;
+  padding: 0px;
+}
+
 .listcolumn .listRow {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  top: 270px;
+  margin: auto;
 }
 
 .listcolumn .listRow .column {
@@ -120,6 +128,7 @@
   height: 60px;
   line-height: 60px;
   border: 1px solid #3d87cc;
+  background-color: #3d87cc;
   color: #fff;
   font-size: 30px;
   text-align: left;
@@ -134,7 +143,7 @@
   background-color: #e2ebf0;
   min-height: 0px;
   max-height: 600px;
-  height: 280px;
+  height: 600px;
 }
 
 .listcolumn .listRow .column .column1 {

@@ -1,10 +1,12 @@
 .displayinfo{
+    margin: 0px;
+    padding: 0px;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100%;
     .articalBox{
         position: relative;
-        top: 200px;
+        margin: auto;
         justify-content: center;
         .articalContent{
             width: 100%;
@@ -22,12 +24,12 @@
             .text{
                 font-size: 18px;
                 margin-top: 10px;
+                /* display: flex; */
                 justify-content: center;
                 white-space: nowrap;
                 text-align: center;
                 padding-top: 10px;
                 border-top: 1px solid;
-                display: block;
                 .textCon0{
                     font-size: 0.875rem;
                     color: #000000;
@@ -36,8 +38,9 @@
                 }
                 .articalDate{
                     font-size: 0.875rem;
-                    color: #000000;
+                    color: #333333;
                     line-height: 20px;
+                    display: inline-block;
                 }
                 .textCon1{
                     margin-left: 20px !important;
@@ -73,10 +76,12 @@
 }
 
 .listcolumn{
+    margin: 0px;
+    padding: 0px;
     .listRow{
         justify-content: center;
         position: relative;
-        top: 270px;
+        margin: auto;
         .column{
             width: 1200px;
             min-height: 800px;
@@ -94,6 +99,7 @@
                     height: 60px;
                     line-height: 60px;
                     border: 1px solid #3d87cc;
+                    background-color:#3d87cc;
                     color: #fff;
                     font-size: 30px;
                     text-align: left;
@@ -107,7 +113,7 @@
                     background-color: #e2ebf0;
                     min-height: 0px;
                     max-height: 600px;
-                    height: 280px;
+                    height: 600px;
                 }
             }
             .column1{
