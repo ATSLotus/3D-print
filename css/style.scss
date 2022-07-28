@@ -4,52 +4,55 @@ $headerLogoWidth: 800px;$headerLogoHeight: 80px;$headerLogoMT: calc(($headerHeig
 $headerSearchWidth: 280px;$headerSearchHeight: 40px;$headerSearchMT: calc(($headerHeight - $headerSearchHeight) / 2);
 $naviBarHeight: 60px;$naviBarBackColor: #204888;
 
+/* 公共部分  */
+.headerDiv{
+    width: 100%;
+    height: $headerHeight;
+    background: $headerBackColor url("../image/head_bg.jpeg") no-repeat center;
+    .header{
+        width: $width;
+        height: $headerHeight;
+        margin: auto;
+        .headerLogo{
+            width: $headerLogoWidth;
+            height: $headerHeight;
+            float: left;
+            .headerLogoImg{
+                height: $headerLogoHeight;
+                margin-top: $headerLogoMT;
+            }
+        }
+        .headerSearch{
+            width: $width - $headerLogoWidth;
+            height: $headerHeight;
+            float: right;
+            .search{
+                width: $headerSearchWidth;
+                height: $headerSearchHeight;
+                float: right;
+                margin-top: $headerSearchMT;
+                background-color: white;
+            }
+        }
+    }
+}
+.naviBarDiv{
+    width: 100%;
+    height: $naviBarHeight;
+    background: $naviBarBackColor;
+    .naviBar{
+        width: $width;
+        height: $naviBarHeight;
+        margin: auto;
+        .naviCon{
+            width: $width;
+            height: $naviBarHeight;
+        }
+    }
+}
+
 .main{
     margin: 0px;
     padding: 0px;
-    .headerDiv{
-        width: 100%;
-        height: $headerHeight;
-        background: $headerBackColor url("../image/head_bg.jpeg") no-repeat center;
-        .header{
-            width: $width;
-            height: $headerHeight;
-            margin: auto;
-            .headerLogo{
-                width: $headerLogoWidth;
-                height: $headerHeight;
-                float: left;
-                .headerLogoImg{
-                    height: $headerLogoHeight;
-                    margin-top: $headerLogoMT;
-                }
-            }
-            .headerSearch{
-                width: $width - $headerLogoWidth;
-                height: $headerHeight;
-                float: right;
-                .search{
-                    width: $headerSearchWidth;
-                    height: $headerSearchHeight;
-                    float: right;
-                    margin-top: $headerSearchMT;
-                    background-color: white;
-                }
-            }
-        }
-    }
-    .naviBarDiv{
-        width: 100%;
-        height: $naviBarHeight;
-        background: $naviBarBackColor;
-        .naviBar{
-            width: $width;
-            height: $naviBarHeight;
-            margin: auto;
-            .naviCon{
-                width: $width;
-                height: $naviBarHeight;
-            }
-        }
-    }
+    
 }
