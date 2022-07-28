@@ -1,0 +1,235 @@
+.displayinfo{
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    .articalBox{
+        position: relative;
+        top: 200px;
+        justify-content: center;
+        .articalContent{
+            width: 100%;
+            min-height: 1200px;
+            .articalTitle{
+                text-align: center;
+                color: #000000;
+                margin-top: 60px;
+                font-weight: bold;
+                font-size: 30px;
+                display: block;
+                padding-bottom: 20px;
+                font-family: Arial;
+            }
+            .text{
+                font-size: 18px;
+                margin-top: 10px;
+                justify-content: center;
+                white-space: nowrap;
+                text-align: center;
+                padding-top: 10px;
+                border-top: 1px solid;
+                display: block;
+                .textCon0{
+                    font-size: 0.875rem;
+                    color: #000000;
+                    margin-right: 20px;
+                    display: inline-block;
+                }
+                .articalDate{
+                    font-size: 0.875rem;
+                    color: #000000;
+                    line-height: 20px;
+                }
+                .textCon1{
+                    margin-left: 20px !important;
+                    margin-right: 20px;
+                    font-size: 0.875rem;
+                    color: #333333;
+                    display: inline-block;
+                }
+                .articalSee{
+                    font-size: 0.875rem;
+                    color: #333333;
+                    line-height: 20px;
+                    display: inline-block;
+                }
+            }
+            .articalCon{
+                padding: 0px;
+                font-stretch: normal;
+                font-size: 15px;
+                line-height: 1.7;
+                color: #333333;
+                text-align: justify;
+                background-color: #ffffff;
+                margin-bottom: 20px !important;
+                font-family: Microsoft YaHei !important;
+                margin-top: 20px;
+                margin-right: auto;
+                margin-left: auto;
+                width: 1200px;
+            }
+        }
+    }
+}
+
+.listcolumn{
+    .listRow{
+        justify-content: center;
+        position: relative;
+        top: 270px;
+        .column{
+            width: 1200px;
+            min-height: 800px;
+            margin: auto;
+            white-space: nowrap;
+            justify-content: space-around;
+            .column0{
+                width: 250px;
+                display: inline-block;
+                margin-top: 20px;
+                white-space: normal;
+                .listTitle{
+                    display: inline-block;
+                    width: 250px;
+                    height: 60px;
+                    line-height: 60px;
+                    border: 1px solid #3d87cc;
+                    color: #fff;
+                    font-size: 30px;
+                    text-align: left;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+                    font-size: 23px;
+                }
+                .listCon{
+                    
+                    display: inline-block;
+                    background-color: #e2ebf0;
+                    min-height: 0px;
+                    max-height: 600px;
+                    height: 280px;
+                }
+            }
+            .column1{
+                width: 900px;
+                margin-top: 20px;
+                margin-left: 50px;
+                display: inline-block;
+                vertical-align: top;
+                .listHeader{
+                    white-space: nowrap;
+                    justify-content: flex-start;
+                    .listHeaderTitle{
+                        width: 150px;
+                        height: 40px;
+                        border-bottom: 5px solid #0b59ad;
+                        line-height: 40px;
+                        text-align: center;
+                        color: blue;
+                        font-size: 24px;
+                        display: inline-block;
+                    }
+                    .listHeaderPosition{
+                        width: 750px;
+                        height: 40px;
+                        vertical-align: bottom;
+                        line-height: 40px;
+                        color: #00234b;
+                        text-decoration: none;
+                        font-size: 20px;
+                        display: inline-block;
+                        border-bottom: 5px solid #d0d0d0;
+                        text-align: right !important;
+                    }
+                }
+                .listContent{
+                    display: inline-block;
+                    width: 900px;
+                    margin-top: 20px;
+                    min-height: 600px;
+                    white-space: normal;
+                }
+            }
+        }
+    }
+}
+#wp_listcolumn_w3 {
+    position: relative !important;
+    .wp_listcolumn {
+        font-size: 18px;
+        width: 250px !important;
+        padding-left: 0px !important;
+        background: none !important;
+        border: none !important;
+        display: block;
+        .wp_column {
+            background-color: #fff !important;
+            box-sizing: border-box;
+            border: 1px solid #c3d1d7;
+            display: block;
+            width: 100%;
+            vertical-align: bottom;
+            a {
+                width: 100%;
+                display: block;
+                background-image: none !important;
+                color: #248aa6 !important;
+                background: none !important;
+                border: none !important;
+                text-align: center !important;
+                line-height: 50px !important;
+                font-size: 15px;
+                font-weight: bold;
+                word-wrap: break-word;
+                .column-name{
+                    font-size: 20px;
+                    display: inline-block;
+                    line-height: 22px;
+                    padding: 5px 10px 5px 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.wp_article_list{
+    padding: 0px;
+    position: relative !important;
+    display: block;
+    width: 100%;
+    .list_item{
+        display: inline-block;
+        border: none !important;
+        height: 50px !important;
+        line-height: 50px !important;
+        justify-content: space-between !important;
+        width: 100%;
+        vertical-align: top;
+        .pr_fields{
+            display: inline;
+            float: left;
+            .Article_Index{
+                display: inline-block;
+                width: 10px;
+                height: 16px;
+                color: #fff;
+                font-size: 11px;
+                float: left;
+                margin-right: 5px;
+                overflow: hidden;
+                text-indent: -99em;
+                margin-left: 5px;
+                vertical-align: top;
+                background: url(./image/trangle.png) !important;
+                background-size: 10px 16px !important;
+                margin-top: 17px !important;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
