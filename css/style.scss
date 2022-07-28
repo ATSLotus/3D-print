@@ -51,8 +51,106 @@ $naviBarHeight: 60px;$naviBarBackColor: #204888;
     }
 }
 
+$contentMT: 50px;$contentHeight: 1000px;
+$contentEleHeight: 450px;$contentEleWidth: 380px;
+$contentRow00Width: 2 * $contentEleWidth;$contentRow01Width: $contentEleWidth;
+$rowConTitleHeight: 50px;$rowConTitleBorderBottomColor: #1F6BBF;
+$rowConTitleTitWidth: 100px;$rowConTitleTitBorderBottomWidth: 5px;$rowConTitleTitBorderBottomColor: #204988;
+$rowConTitleColor: $rowConTitleTitBorderBottomColor;
+
 .main{
     margin: 0px;
     padding: 0px;
-    
+    .content{
+        width: $width;
+        height: $contentHeight;
+        margin: auto;
+        // background-color: #ff0;
+        .imageBox{
+            width: $contentEleWidth;
+            height: $contentEleHeight - $rowConTitleHeight;
+            margin-top: $rowConTitleHeight;
+            float: left;
+            .img{
+                width: $contentEleWidth;
+                height: $contentEleHeight;
+            }
+        }
+        .row{
+            width: $width;
+            height: $contentEleHeight;
+            margin-top: $contentMT;
+            .rowCon{
+                width: $contentEleWidth;
+                height: $contentEleHeight;
+                .ConTitle{
+                    width: $contentEleWidth;
+                    height: $rowConTitleHeight;
+                    border-bottom: 2px solid $rowConTitleBorderBottomColor;
+                    color: $rowConTitleColor;
+                    box-sizing: border-box;
+                    .title{
+                        float: left;
+                        width: $rowConTitleTitWidth;
+                        height: $rowConTitleHeight;
+                        line-height: $rowConTitleHeight;
+                        text-align: center;
+                        border-bottom: $rowConTitleTitBorderBottomWidth solid $rowConTitleTitBorderBottomColor;
+                        box-sizing: border-box;
+                        font-size: 20px;
+                        font-weight: 700;
+                        font-family: "SimSun";
+                    }
+                    .moreBtn{
+                        width: $rowConTitleTitWidth;
+                        height: $rowConTitleHeight;
+                        float: right;
+                        line-height: $rowConTitleHeight;
+                        font-weight: 700;
+                        .moreText{
+                            float: right;
+                        }
+                    }
+                }
+                .cons{
+                    width: $contentEleWidth;
+                    height: $contentEleHeight - $rowConTitleHeight;
+                    .con{
+                        width: $contentEleWidth;
+                        height: $contentEleHeight - $rowConTitleHeight;
+                    }
+                }
+            }
+            .row00{
+                width: $contentRow00Width;
+                float: left;
+                .rowCon{
+                    float: right;
+                    .ConTitle{
+                        width: $contentRow00Width;
+                        margin-left: -$contentEleWidth;
+                    }
+                }
+            }
+            .row01{
+                width: $contentEleWidth;
+                float: right;
+            }
+            .row1{
+                width: $contentEleWidth;
+                height: $contentEleHeight;
+            }
+            .row10{
+                float: left;
+            }
+            .row11{
+                float: right;
+                margin-left: calc(($width - 3 * $contentEleWidth)/2);
+            }
+            .row12{
+                float: right;
+            }
+        }
+            
+    }
 }

@@ -1,51 +1,145 @@
-.main {
-  margin: 0px;
-  padding: 0px;
-}
-.main .headerDiv {
+@charset "UTF-8";
+/* 公共部分  */
+.headerDiv {
   width: 100%;
   height: 120px;
   background: #1F6BBF url("../image/head_bg.jpeg") no-repeat center;
 }
-.main .headerDiv .header {
+.headerDiv .header {
   width: 1200px;
   height: 120px;
   margin: auto;
 }
-.main .headerDiv .header .headerLogo {
+.headerDiv .header .headerLogo {
   width: 800px;
   height: 120px;
   float: left;
 }
-.main .headerDiv .header .headerLogo .headerLogoImg {
+.headerDiv .header .headerLogo .headerLogoImg {
   height: 80px;
   margin-top: 20px;
 }
-.main .headerDiv .header .headerSearch {
+.headerDiv .header .headerSearch {
   width: 400px;
   height: 120px;
   float: right;
 }
-.main .headerDiv .header .headerSearch .search {
+.headerDiv .header .headerSearch .search {
   width: 280px;
   height: 40px;
   float: right;
   margin-top: 40px;
   background-color: white;
 }
-.main .naviBarDiv {
+
+.naviBarDiv {
   width: 100%;
   height: 60px;
   background: #204888;
 }
-.main .naviBarDiv .naviBar {
+.naviBarDiv .naviBar {
   width: 1200px;
   height: 60px;
   margin: auto;
 }
-.main .naviBarDiv .naviBar .naviCon {
+.naviBarDiv .naviBar .naviCon {
   width: 1200px;
   height: 60px;
+}
+
+.main {
+  margin: 0px;
+  padding: 0px;
+}
+.main .content {
+  width: 1200px;
+  height: 1000px;
+  margin: auto;
+}
+.main .content .imageBox {
+  width: 380px;
+  height: 400px;
+  margin-top: 50px;
+  float: left;
+}
+.main .content .imageBox .img {
+  width: 380px;
+  height: 450px;
+}
+.main .content .row {
+  width: 1200px;
+  height: 450px;
+  margin-top: 50px;
+}
+.main .content .row .rowCon {
+  width: 380px;
+  height: 450px;
+}
+.main .content .row .rowCon .ConTitle {
+  width: 380px;
+  height: 50px;
+  border-bottom: 2px solid #1F6BBF;
+  color: #204988;
+  box-sizing: border-box;
+}
+.main .content .row .rowCon .ConTitle .title {
+  float: left;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 5px solid #204988;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "SimSun";
+}
+.main .content .row .rowCon .ConTitle .moreBtn {
+  width: 100px;
+  height: 50px;
+  float: right;
+  line-height: 50px;
+  font-weight: 700;
+}
+.main .content .row .rowCon .ConTitle .moreBtn .moreText {
+  float: right;
+}
+.main .content .row .rowCon .cons {
+  width: 380px;
+  height: 400px;
+}
+.main .content .row .rowCon .cons .con {
+  width: 380px;
+  height: 400px;
+}
+.main .content .row .row00 {
+  width: 760px;
+  float: left;
+}
+.main .content .row .row00 .rowCon {
+  float: right;
+}
+.main .content .row .row00 .rowCon .ConTitle {
+  width: 760px;
+  margin-left: -380px;
+}
+.main .content .row .row01 {
+  width: 380px;
+  float: right;
+}
+.main .content .row .row1 {
+  width: 380px;
+  height: 450px;
+}
+.main .content .row .row10 {
+  float: left;
+}
+.main .content .row .row11 {
+  float: right;
+  margin-left: 30px;
+}
+.main .content .row .row12 {
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
