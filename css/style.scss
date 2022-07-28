@@ -3,6 +3,9 @@ $headerHeight: 120px;$headerBackColor: #1F6BBF;
 $headerLogoWidth: 800px;$headerLogoHeight: 80px;$headerLogoMT: calc(($headerHeight - $headerLogoHeight) / 2);
 $headerSearchWidth: 280px;$headerSearchHeight: 40px;$headerSearchMT: calc(($headerHeight - $headerSearchHeight) / 2);
 $naviBarHeight: 60px;$naviBarBackColor: #204888;
+$footerMT: 50px;$footerHeight: 100px;$footerBackColor: #204888;
+$footerRightWidth: 800px;$footerLogoHeight: 60px;$footerLeftConColor: #ffffff;
+$footerLeftConHeight: 30px;
 
 /* 公共部分  */
 .headerDiv{
@@ -50,14 +53,52 @@ $naviBarHeight: 60px;$naviBarBackColor: #204888;
         }
     }
 }
+.footerDiv{
+    width: 100%;
+    height: $footerHeight;
+    background: $footerBackColor;
+    margin-top: $footerMT;
+    .footer{
+        width: $width;
+        height: $footerHeight;
+        margin: auto;
+        .footerLeft{
+            width: $width - $footerRightWidth;
+            height: $footerHeight;
+            margin-top: calc(($footerHeight - 3 * $footerLeftConHeight) / 2);
+            float: left;
+            .footerLeftCon{
+                width: 100%;
+                height: $footerLeftConHeight;
+                line-height: $footerLeftConHeight;
+                font-size: 14px;
+                font-family: "Microsoft YaHei";
+                color: $footerLeftConColor;
+            }
+        }
+        .footerRight{
+            width: $footerRightWidth;
+            height: $footerHeight;
+            float: right;
+            .footerLogoImg{
+                height: $footerLogoHeight;
+                margin-top: calc(($footerHeight - $footerLogoHeight) / 2);
+                float: right;
+            }
+        }
+    }
+}
 
-$contentMT: 50px;$contentHeight: 1000px;
+$contentMT: 50px;$contentHeight: 1050px;
 $contentEleHeight: 450px;$contentEleWidth: 380px;
 $contentRow00Width: 2 * $contentEleWidth;$contentRow01Width: $contentEleWidth;
 $rowConTitleHeight: 50px;$rowConTitleBorderBottomColor: #1F6BBF;
 $rowConTitleTitWidth: 100px;$rowConTitleTitBorderBottomWidth: 5px;$rowConTitleTitBorderBottomColor: #204988;
 $rowConTitleColor: $rowConTitleTitBorderBottomColor;
+$linkBoxHeight: 50px;$linkTitleWidth: 100px;$linkTitleBackColor: #204888;$linkTitleColor: #ffffff;
+$linkBackColor: #f1f1f1;
 
+/*主页*/
 .main{
     margin: 0px;
     padding: 0px;
@@ -65,7 +106,6 @@ $rowConTitleColor: $rowConTitleTitBorderBottomColor;
         width: $width;
         height: $contentHeight;
         margin: auto;
-        // background-color: #ff0;
         .imageBox{
             width: $contentEleWidth;
             height: $contentEleHeight - $rowConTitleHeight;
@@ -151,6 +191,28 @@ $rowConTitleColor: $rowConTitleTitBorderBottomColor;
                 float: right;
             }
         }
-            
+        .linkBox{
+            width: $width;
+            height: $linkBoxHeight;
+            margin-top: $contentMT;
+            .linkTitle{
+                width: $linkTitleWidth;
+                height: $linkBoxHeight;
+                line-height: $linkBoxHeight;
+                float: left;
+                background: $linkTitleBackColor;
+                color: $linkTitleColor;
+                font-size: 20px;
+                font-weight: 700;
+                font-family: "SimSun";
+                text-align: center;
+            }
+            .link{
+                width: $width - $linkTitleWidth;
+                height: $linkBoxHeight;
+                line-height: $linkBoxHeight;
+                background: $linkBackColor;
+            }
+        }
     }
 }
