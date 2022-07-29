@@ -44,6 +44,9 @@ $footerLeftConHeight: 30px;
                         table{
                             width: $headerSearchWidth;
                             height: $headerSearchHeight;
+                            td{
+                                padding: 0px;
+                            }
                             .keyword{
                                 width: $headerSearchWidth - $headerSearchHeight !important;
                                 height: $headerSearchHeight;
@@ -148,7 +151,7 @@ $rowConTitleHeight: 50px;$rowConTitleBorderBottomColor: #1F6BBF;
 $rowConTitleTitWidth: 100px;$rowConTitleTitBorderBottomWidth: 5px;$rowConTitleTitBorderBottomColor: #204988;
 $rowConTitleColor: $rowConTitleTitBorderBottomColor;
 $linkBoxHeight: 50px;$linkTitleWidth: 100px;$linkTitleBackColor: #204888;$linkTitleColor: #ffffff;
-$linkBackColor: #f1f1f1;
+$linkBackColor: #f1f1f1;$linkML: 40px;$linkAColor: #1F6BBF;$linkAHoverColor: #ff0000;
 
 /*主页*/
 .main{
@@ -259,11 +262,30 @@ $linkBackColor: #f1f1f1;
                 font-family: "SimSun";
                 text-align: center;
             }
-            .link{
+            .links{
                 width: $width - $linkTitleWidth;
                 height: $linkBoxHeight;
                 line-height: $linkBoxHeight;
                 background: $linkBackColor;
+                float: right;
+                .link{
+                    float: left;
+                    margin-left: $linkML;
+                    a{
+                        cursor: none;
+                        text-decoration: none;
+                    }
+                    a:link,a:visited{
+                        color: $linkAColor;
+                    }
+                    a:hover{
+                        color: $linkAHoverColor;
+                    }
+                    a:active,a:target{
+                        color: $linkAColor;
+                    }
+                    
+                }
             }
         }
     }
