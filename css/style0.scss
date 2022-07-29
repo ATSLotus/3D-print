@@ -1,3 +1,4 @@
+$naviBarBackColor: #204888;
 .displayinfo{
     margin: 0px;
     padding: 0px;
@@ -98,8 +99,8 @@
                     width: 250px;
                     height: 60px;
                     line-height: 60px;
-                    border: 1px solid #3d87cc;
-                    background-color:#3d87cc;
+                    border: 1px solid $naviBarBackColor;
+                    background-color:$naviBarBackColor;
                     color: #fff;
                     font-size: 30px;
                     text-align: left;
@@ -129,10 +130,10 @@
                     .listHeaderTitle{
                         width: 150px;
                         height: 40px;
-                        border-bottom: 5px solid #0b59ad;
+                        border-bottom: 5px solid $naviBarBackColor;
                         line-height: 40px;
                         text-align: center;
-                        color: blue;
+                        color: $naviBarBackColor;
                         font-size: 24px;
                         display: inline-block;
                     }
@@ -141,12 +142,19 @@
                         height: 40px;
                         vertical-align: bottom;
                         line-height: 40px;
-                        color: #00234b;
+                        color: $naviBarBackColor;
                         text-decoration: none !important;
                         font-size: 20px;
                         display: inline-block;
                         border-bottom: 5px solid #d0d0d0;
                         text-align: right !important;
+                        .Column_Position{
+                            a{
+                                text-decoration: none !important;
+                                color: $naviBarBackColor;
+                            }
+                        }
+                        
                     }
                 }
                 .listContent{
@@ -175,12 +183,13 @@
             border: 1px solid #c3d1d7;
             display: block;
             width: 100%;
+            // height: 50px;
             vertical-align: bottom;
             a {
                 width: 100%;
                 display: block;
                 background-image: none !important;
-                color: #248aa6 !important;
+                color: #204888 !important;
                 background: none !important;
                 border: none !important;
                 text-align: center !important;
@@ -196,7 +205,15 @@
                     cursor: pointer;
                 }
             }
+            a :checked{
+                width: 100%;
+                height: 100%;
+                color: #e2ebf0;
+                background-color: $naviBarBackColor;
+            }
+
         }
+
     }
 }
 .listcolumn .wp_article_list{
@@ -219,14 +236,17 @@
                 display: inline-block;
                 width: 10px;
                 height: 16px;
-                margin-top: 3px;
+                margin-top: 17px !important;
                 color: #fff;
                 font-size: 11px;
                 float: left;
                 margin-right: 5px;
                 overflow: hidden;
                 text-indent: -99em;
-                background: url(../image/trangle.png) no-repeat 50%;
+                background: url(../image/trangle.png) !important;
+                margin-left: 5px;
+                vertical-align: top;
+                background-size: 10px 16px !important;
             }
             .Article_Title{
                 float: left;
@@ -264,4 +284,27 @@
     display: block;
     width: 100%;
     vertical-align: bottom;
+}
+
+.listcolumn #wp_listcolumn_w9 .wp_listcolumn{
+    padding-left: 0px !important;
+    .wp_column{
+        // color: $naviBarBackColor;
+        a{
+            text-align: center;
+            color: $naviBarBackColor;
+            .column-name{
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 50px !important;
+                text-align: center !important;
+
+            }
+        }
+        a.selected{
+            text-align: center;
+            color: #d0d0d0;
+            background-color: $naviBarBackColor;
+        }
+    }
 }
