@@ -116,7 +116,8 @@ $footerLeftConHeight: 30px;
         .footerLeft{
             width: $width - $footerRightWidth;
             height: $footerHeight;
-            margin-top: calc(($footerHeight - 3 * $footerLeftConHeight) / 2);
+            padding-top: calc(($footerHeight - 3 * $footerLeftConHeight) / 2);
+            box-sizing: border-box;
             float: left;
             .footerLeftCon{
                 width: 100%;
@@ -152,7 +153,9 @@ $rowConTitleTitWidth: 100px;$rowConTitleTitBorderBottomWidth: 5px;$rowConTitleTi
 $rowConTitleColor: $rowConTitleTitBorderBottomColor;
 $linkBoxHeight: 50px;$linkTitleWidth: 100px;$linkTitleBackColor: #204888;$linkTitleColor: #ffffff;
 $linkBackColor: #f1f1f1;$linkML: 40px;$linkAColor: #1F6BBF;$linkAHoverColor: #ff0000;
-$imgWidth: 360px;$imgHeight: 240px;$imgTitleMT: 20px;
+$imgWidth: 360px;$imgHeight: 240px;$imgTitleMT: 10px;
+$listColor: #1F6BBF;$listHoverColor: #ff0000;
+$newsHeight: 80px;$newsCalendarWidth: 50px;$newsCalendarHeight: 50px;
 
 /*主页*/
 .main{
@@ -196,6 +199,7 @@ $imgWidth: 360px;$imgHeight: 240px;$imgTitleMT: 20px;
                 .dtjt10_div_text_text{
                     margin-top: 25px;
                     padding: 0px calc(($contentEleWidth - $imgWidth) / 2) 0px calc(($contentEleWidth - $imgWidth) / 2);
+                    text-align: justify;
                 }
             }
         }
@@ -238,9 +242,85 @@ $imgWidth: 360px;$imgHeight: 240px;$imgTitleMT: 20px;
                 .cons{
                     width: $contentEleWidth;
                     height: $contentEleHeight - $rowConTitleHeight;
+                    z-index: 1000;
+                    position: relative;
                     .con{
                         width: $contentEleWidth;
                         height: $contentEleHeight - $rowConTitleHeight;
+                    }
+                    .wp_article_list{
+                        height: $rowConTitleHeight;
+                        .list_item{
+                            height: 50px;
+                            line-height: 50px;
+                            border: none;
+                            .pr_fields{
+                                margin-left: 10px;
+                                .Article_Index{
+                                    width: 20px;
+                                    height: $rowConTitleHeight;
+                                    margin: 0px;
+                                    background: url('../image/trangle.png') no-repeat center;
+                                    background-size: 15px 15px;
+                                }
+                                .Article_Title{
+                                    a{
+                                        text-decoration: none;
+                                    }
+                                    a,a:link,a:visited{
+                                        color: $listColor;
+                                    }
+                                    a:hover{
+                                        color: $listHoverColor;
+                                    }
+                                    a:active,a:target{
+                                        color: $listColor;
+                                    }
+                                }
+                            }
+                            .ex_fields{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                    .news_list{
+                        .news{
+                            height: $newsHeight;
+                            margin: 0px;
+                            padding: 0px;
+                            border: none;
+                            .news_time{
+                                width: $newsCalendarWidth;
+                                height: $newsCalendarHeight;
+                                margin-top: calc(($newsHeight - $newsCalendarHeight) / 2);
+                                margin-left: 10px;
+                                margin-right: 0px;
+                            }
+                            .news_wz{
+                                text-align: center;
+                                .news_title{
+                                    height: $newsHeight;
+                                    line-height: $newsHeight;
+                                    a{
+                                        text-decoration: none;
+                                    }
+                                    a,a:link,a:visited{
+                                        color: $listColor;
+                                    }
+                                    a:hover{
+                                        color: $listHoverColor;
+                                    }
+                                    a:active,a:target{
+                                        color: $listColor;
+                                    }
+                                }
+                                .news_text{
+                                    display: none;
+                                }
+                            }
+                        }
+                        
+
                     }
                 }
             }
@@ -300,7 +380,6 @@ $imgWidth: 360px;$imgHeight: 240px;$imgTitleMT: 20px;
                     float: left;
                     margin-left: $linkML;
                     a{
-                        cursor: none;
                         text-decoration: none;
                     }
                     a:link,a:visited{
