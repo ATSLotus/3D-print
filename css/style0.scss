@@ -108,7 +108,7 @@
                     font-size: 23px;
                 }
                 .listCon{
-                    
+                    width: 250px !important;
                     display: inline-block;
                     background-color: #e2ebf0;
                     min-height: 0px;
@@ -123,6 +123,7 @@
                 display: inline-block;
                 vertical-align: top;
                 .listHeader{
+                    margin-top: 14px;
                     white-space: nowrap;
                     justify-content: flex-start;
                     .listHeaderTitle{
@@ -141,7 +142,7 @@
                         vertical-align: bottom;
                         line-height: 40px;
                         color: #00234b;
-                        text-decoration: none;
+                        text-decoration: none !important;
                         font-size: 20px;
                         display: inline-block;
                         border-bottom: 5px solid #d0d0d0;
@@ -159,7 +160,7 @@
         }
     }
 }
-#wp_listcolumn_w3 {
+.listcolumn #wp_listcolumn_w04 {
     position: relative !important;
     .wp_listcolumn {
         font-size: 18px;
@@ -198,7 +199,7 @@
         }
     }
 }
-.wp_article_list{
+.listcolumn .wp_article_list{
     padding: 0px;
     position: relative !important;
     display: block;
@@ -218,19 +219,20 @@
                 display: inline-block;
                 width: 10px;
                 height: 16px;
+                margin-top: 3px;
                 color: #fff;
                 font-size: 11px;
                 float: left;
                 margin-right: 5px;
                 overflow: hidden;
                 text-indent: -99em;
-                margin-left: 5px;
-                vertical-align: top;
-                background: url(./image/trangle.png) !important;
-                background-size: 10px 16px !important;
-                margin-top: 17px !important;
+                background: url(../image/trangle.png) no-repeat 50%;
+            }
+            .Article_Title{
+                float: left;
+
                 a{
-                    text-decoration: none;
+                    text-decoration: none !important;
                     color: #000;
                     font-size: 16px;
                 }
@@ -238,4 +240,28 @@
         }
     }
 }
+.listcolumn .Article_Title{
+    float: left;
+    a{
+        text-decoration: none !important;
+        color: #000;
+        font-size: 16px;
+    }
+}
 
+.listcolumn #wp_listcolumn_w04 .wp_listcolumn{
+    font-size: 18px;
+    width: 250px !important;
+    padding-left: 0px !important;
+    background: none !important;
+    border: none !important;
+    display: block;
+}
+.listcolumn #wp_listcolumn_w04 .wp_listcolumn .wp_column {
+    background-color: #fff !important;
+    box-sizing: border-box;
+    border: 1px solid #c3d1d7;
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
