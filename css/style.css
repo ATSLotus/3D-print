@@ -24,12 +24,41 @@
   height: 120px;
   float: right;
 }
-.headerDiv .header .headerSearch .search {
+.headerDiv .header .headerSearch .searchBox, .headerDiv .header .headerSearch .portal-w {
   width: 280px;
   height: 40px;
   float: right;
   margin-top: 40px;
   background-color: white;
+}
+.headerDiv .header .headerSearch .searchBox form, .headerDiv .header .headerSearch .portal-w form {
+  width: 280px;
+  height: 40px;
+}
+.headerDiv .header .headerSearch .searchBox form .wp_search, .headerDiv .header .headerSearch .portal-w form .wp_search {
+  width: 280px;
+  height: 40px;
+}
+.headerDiv .header .headerSearch .searchBox form .wp_search table, .headerDiv .header .headerSearch .portal-w form .wp_search table {
+  width: 280px;
+  height: 40px;
+}
+.headerDiv .header .headerSearch .searchBox form .wp_search table .keyword, .headerDiv .header .headerSearch .portal-w form .wp_search table .keyword {
+  width: 240px !important;
+  height: 40px;
+  border: none;
+  padding: 0px;
+  padding-left: 10px;
+  float: left;
+}
+.headerDiv .header .headerSearch .searchBox form .wp_search table .search, .headerDiv .header .headerSearch .portal-w form .wp_search table .search {
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  border: 0px;
+  background: #1F4888 url("../image/search.png") no-repeat center;
+  background-size: 75% 75%;
+  float: right;
 }
 
 .naviBarDiv {
@@ -42,9 +71,28 @@
   height: 60px;
   margin: auto;
 }
-.naviBarDiv .naviBar .naviCon {
+.naviBarDiv .naviBar .naviCon, .naviBarDiv .naviBar #wp_nav_w02 {
   width: 1200px;
   height: 60px;
+}
+.naviBarDiv .naviBar .naviCon .wp_nav, .naviBarDiv .naviBar #wp_nav_w02 .wp_nav {
+  width: 1200px;
+  height: 60px;
+}
+.naviBarDiv .naviBar .naviCon .wp_nav .nav-item, .naviBarDiv .naviBar #wp_nav_w02 .wp_nav .nav-item {
+  width: 150px;
+  background: #204888;
+  line-height: 60px;
+}
+.naviBarDiv .naviBar .naviCon .wp_nav .nav-item a, .naviBarDiv .naviBar #wp_nav_w02 .wp_nav .nav-item a {
+  color: #ffffff;
+  background-color: inherit;
+  font-size: 18px;
+  text-align: center;
+}
+.naviBarDiv .naviBar .naviCon .wp_nav .nav-item:hover, .naviBarDiv .naviBar #wp_nav_w02 .wp_nav .nav-item:hover {
+  color: #ffffff;
+  background: #1F6BBF;
 }
 
 .footerDiv {
@@ -81,6 +129,10 @@
   height: 60px;
   margin-top: 20px;
   float: right;
+}
+
+body {
+  font-family: Microsoft YaHei, Helvetica, STHeiti STXihei, Microsoft JhengHei, Tohoma, Arial !important;
 }
 
 /*主页*/
@@ -172,7 +224,7 @@
   float: left;
 }
 .main .content .row .row11 {
-  float: right;
+  float: left;
   margin-left: 30px;
 }
 .main .content .row .row12 {

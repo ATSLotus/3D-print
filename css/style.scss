@@ -2,7 +2,7 @@ $width: 1200px;
 $headerHeight: 120px;$headerBackColor: #1F6BBF;
 $headerLogoWidth: 800px;$headerLogoHeight: 80px;$headerLogoMT: calc(($headerHeight - $headerLogoHeight) / 2);
 $headerSearchWidth: 280px;$headerSearchHeight: 40px;$headerSearchMT: calc(($headerHeight - $headerSearchHeight) / 2);
-$naviBarHeight: 60px;$naviBarBackColor: #204888;
+$naviBarHeight: 60px;$naviBarBackColor: #204888;$naviBarHoverBackColor: #1F6BBF;$naviBarColor: #ffffff;$naviBarHoverColor: #ffffff;
 $footerMT: 50px;$footerHeight: 100px;$footerBackColor: #204888;
 $footerRightWidth: 800px;$footerLogoHeight: 60px;$footerLeftConColor: #ffffff;
 $footerLeftConHeight: 30px;
@@ -29,12 +29,41 @@ $footerLeftConHeight: 30px;
             width: $width - $headerLogoWidth;
             height: $headerHeight;
             float: right;
-            .search{
+            .searchBox,.portal-w{
                 width: $headerSearchWidth;
                 height: $headerSearchHeight;
                 float: right;
                 margin-top: $headerSearchMT;
                 background-color: white;
+                form{
+                    width: $headerSearchWidth;
+                    height: $headerSearchHeight;
+                    .wp_search{
+                        width: $headerSearchWidth;
+                        height: $headerSearchHeight;
+                        table{
+                            width: $headerSearchWidth;
+                            height: $headerSearchHeight;
+                            .keyword{
+                                width: $headerSearchWidth - $headerSearchHeight !important;
+                                height: $headerSearchHeight;
+                                border: none;
+                                padding: 0px;
+                                padding-left: 10px;
+                                float: left;
+                            }
+                            .search{
+                                width: $headerSearchHeight;
+                                height: $headerSearchHeight;
+                                padding: 0px;
+                                border: 0px;
+                                background:#1F4888 url("../image/search.png") no-repeat center;
+                                background-size: 75% 75%;
+                                float: right;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -47,9 +76,28 @@ $footerLeftConHeight: 30px;
         width: $width;
         height: $naviBarHeight;
         margin: auto;
-        .naviCon{
+        .naviCon,#wp_nav_w02{
             width: $width;
             height: $naviBarHeight;
+            .wp_nav{
+                width: $width;
+                height: $naviBarHeight;
+                .nav-item{
+                    width: calc($width / 8);
+                    background: $naviBarBackColor;
+                    line-height: $naviBarHeight;
+                    a{
+                        color: $naviBarColor;
+                        background-color: inherit;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+                .nav-item:hover{
+                    color: $naviBarHoverColor;
+                    background: $naviBarHoverBackColor;
+                }
+            }
         }
     }
 }
@@ -87,6 +135,10 @@ $footerLeftConHeight: 30px;
             }
         }
     }
+}
+
+body{
+    font-family: Microsoft YaHei, Helvetica, STHeiti STXihei, Microsoft JhengHei, Tohoma, Arial !important;
 }
 
 $contentMT: 50px;$contentHeight: 1050px;
@@ -184,7 +236,7 @@ $linkBackColor: #f1f1f1;
                 float: left;
             }
             .row11{
-                float: right;
+                float: left;
                 margin-left: calc(($width - 3 * $contentEleWidth)/2);
             }
             .row12{
