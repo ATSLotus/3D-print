@@ -43,6 +43,9 @@
   width: 280px;
   height: 40px;
 }
+.headerDiv .header .headerSearch .searchBox form .wp_search table td, .headerDiv .header .headerSearch .portal-w form .wp_search table td {
+  padding: 0px;
+}
 .headerDiv .header .headerSearch .searchBox form .wp_search table .keyword, .headerDiv .header .headerSearch .portal-w form .wp_search table .keyword {
   width: 240px !important;
   height: 40px;
@@ -155,6 +158,33 @@ body {
   width: 380px;
   height: 450px;
 }
+.main .content .imageBox .dtjt10_div_img {
+  margin: 10px;
+}
+.main .content .imageBox .dtjt10_div_img img {
+  object-fit: contain;
+}
+.main .content .imageBox .dtjt10_div_img .number {
+  right: 20px;
+}
+.main .content .imageBox .dtjt10_div_text {
+  position: relative;
+  top: 260px;
+  left: -380px;
+  margin-top: 20px;
+  width: 380px;
+  height: 120px;
+}
+.main .content .imageBox .dtjt10_div_text .dtjt10_div_text_title {
+  background: #fff;
+}
+.main .content .imageBox .dtjt10_div_text .dtjt10_div_text_title a {
+  font-size: 20px;
+}
+.main .content .imageBox .dtjt10_div_text .dtjt10_div_text_text {
+  margin-top: 25px;
+  padding: 0px 10px 0px 10px;
+}
 .main .content .row {
   width: 1200px;
   height: 450px;
@@ -247,11 +277,29 @@ body {
   font-family: "SimSun";
   text-align: center;
 }
-.main .content .linkBox .link {
+.main .content .linkBox .links {
   width: 1100px;
   height: 50px;
   line-height: 50px;
   background: #f1f1f1;
+  float: right;
+}
+.main .content .linkBox .links .link {
+  float: left;
+  margin-left: 40px;
+}
+.main .content .linkBox .links .link a {
+  cursor: none;
+  text-decoration: none;
+}
+.main .content .linkBox .links .link a:link, .main .content .linkBox .links .link a:visited {
+  color: #1F6BBF;
+}
+.main .content .linkBox .links .link a:hover {
+  color: #ff0000;
+}
+.main .content .linkBox .links .link a:active, .main .content .linkBox .links .link a:target {
+  color: #1F6BBF;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -44,6 +44,9 @@ $footerLeftConHeight: 30px;
                         table{
                             width: $headerSearchWidth;
                             height: $headerSearchHeight;
+                            td{
+                                padding: 0px;
+                            }
                             .keyword{
                                 width: $headerSearchWidth - $headerSearchHeight !important;
                                 height: $headerSearchHeight;
@@ -148,7 +151,8 @@ $rowConTitleHeight: 50px;$rowConTitleBorderBottomColor: #1F6BBF;
 $rowConTitleTitWidth: 100px;$rowConTitleTitBorderBottomWidth: 5px;$rowConTitleTitBorderBottomColor: #204988;
 $rowConTitleColor: $rowConTitleTitBorderBottomColor;
 $linkBoxHeight: 50px;$linkTitleWidth: 100px;$linkTitleBackColor: #204888;$linkTitleColor: #ffffff;
-$linkBackColor: #f1f1f1;
+$linkBackColor: #f1f1f1;$linkML: 40px;$linkAColor: #1F6BBF;$linkAHoverColor: #ff0000;
+$imgWidth: 360px;$imgHeight: 240px;$imgTitleMT: 20px;
 
 /*主页*/
 .main{
@@ -166,6 +170,33 @@ $linkBackColor: #f1f1f1;
             .img{
                 width: $contentEleWidth;
                 height: $contentEleHeight;
+            }
+            .dtjt10_div_img{
+                margin: calc(($contentEleWidth - $imgWidth) / 2);
+                img{
+                    object-fit: contain;
+                }
+                .number{
+                    right: 20px;
+                }
+            }
+            .dtjt10_div_text{
+                position: relative;
+                top: 260px;
+                left: -$contentEleWidth;
+                margin-top: $imgTitleMT;
+                width: $contentEleWidth;
+                height: $contentEleHeight - $rowConTitleHeight - $imgHeight - calc($contentEleWidth - $imgWidth) - $imgTitleMT;
+                .dtjt10_div_text_title{
+                    background: #fff;
+                    a{
+                        font-size: 20px;
+                    }
+                }
+                .dtjt10_div_text_text{
+                    margin-top: 25px;
+                    padding: 0px calc(($contentEleWidth - $imgWidth) / 2) 0px calc(($contentEleWidth - $imgWidth) / 2);
+                }
             }
         }
         .row{
@@ -259,11 +290,30 @@ $linkBackColor: #f1f1f1;
                 font-family: "SimSun";
                 text-align: center;
             }
-            .link{
+            .links{
                 width: $width - $linkTitleWidth;
                 height: $linkBoxHeight;
                 line-height: $linkBoxHeight;
                 background: $linkBackColor;
+                float: right;
+                .link{
+                    float: left;
+                    margin-left: $linkML;
+                    a{
+                        cursor: none;
+                        text-decoration: none;
+                    }
+                    a:link,a:visited{
+                        color: $linkAColor;
+                    }
+                    a:hover{
+                        color: $linkAHoverColor;
+                    }
+                    a:active,a:target{
+                        color: $linkAColor;
+                    }
+                    
+                }
             }
         }
     }
