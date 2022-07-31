@@ -156,6 +156,7 @@ $linkBackColor: #f1f1f1;$linkML: 40px;$linkAColor: #1F6BBF;$linkAHoverColor: #ff
 $imgWidth: 360px;$imgHeight: 240px;$imgTitleMT: 10px;
 $listColor: #1F6BBF;$listHoverColor: #ff0000;
 $newsHeight: 80px;$newsCalendarWidth: 50px;$newsCalendarHeight: 50px;
+$btnColor: #1F6BBF;$btnHoverColor: #ff0000;
 
 /*主页*/
 .main{
@@ -234,6 +235,18 @@ $newsHeight: 80px;$newsCalendarWidth: 50px;$newsCalendarHeight: 50px;
                         float: right;
                         line-height: $rowConTitleHeight;
                         font-weight: 700;
+                        a{
+                            text-decoration: none;
+                        }
+                        a,a:link,a:visited{
+                            color: $btnColor;
+                        }
+                        a:hover{
+                            color: $btnHoverColor;
+                        }
+                        a:active,a:target{
+                            color: $btnColor;
+                        }
                         .moreText{
                             float: right;
                         }

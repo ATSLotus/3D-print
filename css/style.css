@@ -222,6 +222,18 @@ body {
   line-height: 50px;
   font-weight: 700;
 }
+.main .content .row .rowCon .ConTitle .moreBtn a {
+  text-decoration: none;
+}
+.main .content .row .rowCon .ConTitle .moreBtn a, .main .content .row .rowCon .ConTitle .moreBtn a:link, .main .content .row .rowCon .ConTitle .moreBtn a:visited {
+  color: #1F6BBF;
+}
+.main .content .row .rowCon .ConTitle .moreBtn a:hover {
+  color: #ff0000;
+}
+.main .content .row .rowCon .ConTitle .moreBtn a:active, .main .content .row .rowCon .ConTitle .moreBtn a:target {
+  color: #1F6BBF;
+}
 .main .content .row .rowCon .ConTitle .moreBtn .moreText {
   float: right;
 }
