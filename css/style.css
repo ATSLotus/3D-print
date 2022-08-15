@@ -112,7 +112,8 @@
 .footerDiv .footer .footerLeft {
   width: 400px;
   height: 100px;
-  margin-top: 5px;
+  padding-top: 5px;
+  box-sizing: border-box;
   float: left;
 }
 .footerDiv .footer .footerLeft .footerLeftCon {
@@ -171,9 +172,9 @@ body {
   position: relative;
   top: 260px;
   left: -380px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 380px;
-  height: 120px;
+  height: 130px;
 }
 .main .content .imageBox .dtjt10_div_text .dtjt10_div_text_title {
   background: #fff;
@@ -184,6 +185,7 @@ body {
 .main .content .imageBox .dtjt10_div_text .dtjt10_div_text_text {
   margin-top: 25px;
   padding: 0px 10px 0px 10px;
+  text-align: justify;
 }
 .main .content .row {
   width: 1200px;
@@ -220,16 +222,98 @@ body {
   line-height: 50px;
   font-weight: 700;
 }
+.main .content .row .rowCon .ConTitle .moreBtn a {
+  text-decoration: none;
+}
+.main .content .row .rowCon .ConTitle .moreBtn a, .main .content .row .rowCon .ConTitle .moreBtn a:link, .main .content .row .rowCon .ConTitle .moreBtn a:visited {
+  color: #1F6BBF;
+}
+.main .content .row .rowCon .ConTitle .moreBtn a:hover {
+  color: #ff0000;
+}
+.main .content .row .rowCon .ConTitle .moreBtn a:active, .main .content .row .rowCon .ConTitle .moreBtn a:target {
+  color: #1F6BBF;
+}
 .main .content .row .rowCon .ConTitle .moreBtn .moreText {
   float: right;
 }
 .main .content .row .rowCon .cons {
   width: 380px;
   height: 400px;
+  z-index: 1000;
+  position: relative;
 }
 .main .content .row .rowCon .cons .con {
   width: 380px;
   height: 400px;
+}
+.main .content .row .rowCon .cons .wp_article_list {
+  height: 50px;
+}
+.main .content .row .rowCon .cons .wp_article_list .list_item {
+  height: 50px;
+  line-height: 50px;
+  border: none;
+}
+.main .content .row .rowCon .cons .wp_article_list .list_item .pr_fields {
+  margin-left: 10px;
+}
+.main .content .row .rowCon .cons .wp_article_list .list_item .pr_fields .Article_Index {
+  width: 20px;
+  height: 50px;
+  margin: 0px;
+  background: url("../image/trangle.png") no-repeat center;
+  background-size: 15px 15px;
+}
+.main .content .row .rowCon .cons .wp_article_list .list_item .pr_fields .Article_Title a {
+  text-decoration: none;
+}
+.main .content .row .rowCon .cons .wp_article_list .list_item .pr_fields .Article_Title a, .main .content .row .rowCon .cons .wp_article_list .list_item .pr_fields .Article_Title a:link, .main .content .row .rowCon .cons .wp_article_list .list_item .pr_fields .Article_Title a:visited {
+  color: #1F6BBF;
+}
+.main .content .row .rowCon .cons .wp_article_list .list_item .pr_fields .Article_Title a:hover {
+  color: #ff0000;
+}
+.main .content .row .rowCon .cons .wp_article_list .list_item .pr_fields .Article_Title a:active, .main .content .row .rowCon .cons .wp_article_list .list_item .pr_fields .Article_Title a:target {
+  color: #1F6BBF;
+}
+.main .content .row .rowCon .cons .wp_article_list .list_item .ex_fields {
+  margin-right: 10px;
+}
+.main .content .row .rowCon .cons .news_list .news {
+  height: 80px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+.main .content .row .rowCon .cons .news_list .news .news_time {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+.main .content .row .rowCon .cons .news_list .news .news_wz {
+  text-align: center;
+}
+.main .content .row .rowCon .cons .news_list .news .news_wz .news_title {
+  height: 80px;
+  line-height: 80px;
+}
+.main .content .row .rowCon .cons .news_list .news .news_wz .news_title a {
+  text-decoration: none;
+}
+.main .content .row .rowCon .cons .news_list .news .news_wz .news_title a, .main .content .row .rowCon .cons .news_list .news .news_wz .news_title a:link, .main .content .row .rowCon .cons .news_list .news .news_wz .news_title a:visited {
+  color: #1F6BBF;
+}
+.main .content .row .rowCon .cons .news_list .news .news_wz .news_title a:hover {
+  color: #ff0000;
+}
+.main .content .row .rowCon .cons .news_list .news .news_wz .news_title a:active, .main .content .row .rowCon .cons .news_list .news .news_wz .news_title a:target {
+  color: #1F6BBF;
+}
+.main .content .row .rowCon .cons .news_list .news .news_wz .news_text {
+  display: none;
 }
 .main .content .row .row00 {
   width: 760px;
@@ -289,7 +373,6 @@ body {
   margin-left: 40px;
 }
 .main .content .linkBox .links .link a {
-  cursor: none;
   text-decoration: none;
 }
 .main .content .linkBox .links .link a:link, .main .content .linkBox .links .link a:visited {
